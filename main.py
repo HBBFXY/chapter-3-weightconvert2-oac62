@@ -1,7 +1,9 @@
-# 在这个文件里编写def main():
+
+def main():
     # 获取当前体重
     current_weight = float(input("输入体重（kg）: "))
     
+    # 月球的体重转换率
     moon_ratio = 0.165
     
     print("\n年份\t地球体重(kg)\t月球体重(kg)")
@@ -15,4 +17,4 @@
         print(f"{year}\t{earth_weight:.2f}\t\t{moon_weight:.2f}")
 
 if __name__ == "__main__":
-    main()代码
+    main()
