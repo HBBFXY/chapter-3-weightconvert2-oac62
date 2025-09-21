@@ -1,1 +1,18 @@
-# 在这个文件里编写代码
+# 在这个文件里编写def main():
+    # 获取当前体重
+    current_weight = float(input("输入体重（kg）: "))
+    
+    moon_ratio = 0.165
+    
+    print("\n年份\t地球体重(kg)\t月球体重(kg)")
+    print("-" * 35)
+    
+    # 计算并输出未来10年的体重变化
+    for year in range(1, 11):
+        earth_weight = current_weight + 0.5 * year
+        moon_weight = earth_weight * moon_ratio
+        
+        print(f"{year}\t{earth_weight:.2f}\t\t{moon_weight:.2f}")
+
+if __name__ == "__main__":
+    main()代码
